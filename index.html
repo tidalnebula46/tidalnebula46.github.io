@@ -1,0 +1,1446 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黑兽第二季 - 影像专题,正版高清内容聚焦 | 深幕视频官方网站</title>
+<meta name="description" content="深幕视频官方网站推出黑兽第二季影像专题，汇聚原创高清内容、创作者访谈与深度解析，打造值得信赖的视频内容生态平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23131920'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%23ff8a3d'/%3E%3C/svg%3E">
+<style>
+:root{
+--se-bg:#0f1216;
+--se-bg2:#161b22;
+--se-bg3:#1d242e;
+--se-line:#2a3340;
+--se-txt:#e8edf3;
+--se-sub:#9aa7b6;
+--se-neon:#ff8a3d;
+--se-neon2:#ffd166;
+--se-cyan:#4fd1c5;
+--se-red:#ff5470;
+--se-radius:14px;
+--se-max:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+background:var(--se-bg);
+color:var(--se-txt);
+font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+line-height:1.75;
+-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.se-wrap{max-width:var(--se-max);margin:0 auto;padding:0 22px}
+.se-anchor{scroll-margin-top:120px}
+
+/* ===== sticky header group ===== */
+.se-sticky-group{position:sticky;top:0;z-index:120}
+.se-announce{
+background:linear-gradient(90deg,#2b1a10,#3a2412 45%,#22160e);
+border-bottom:1px solid #4a3220;
+font-size:13.5px;
+color:#ffd9b0;
+}
+.se-announce-inner{
+display:flex;align-items:center;gap:14px;
+padding:9px 22px;max-width:var(--se-max);margin:0 auto;
+overflow:hidden;
+}
+.se-announce-badge{
+flex:0 0 auto;background:var(--se-neon);color:#1a1008;
+font-weight:700;font-size:11.5px;letter-spacing:.5px;
+padding:2px 9px;border-radius:5px;
+}
+.se-announce-track{flex:1;display:flex;gap:34px;white-space:nowrap;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.se-announce-track span{opacity:.92}
+.se-announce-close{
+flex:0 0 auto;background:none;border:1px solid #5a3b24;color:#ffcfa3;
+border-radius:6px;font-size:12px;padding:1px 8px;
+}
+.se-announce-close:hover{border-color:var(--se-neon);color:#fff}
+
+.se-header{
+background:rgba(15,18,22,.94);
+backdrop-filter:blur(12px);
+border-bottom:1px solid var(--se-line);
+}
+.se-header-inner{
+max-width:var(--se-max);margin:0 auto;padding:0 22px;
+height:66px;display:flex;align-items:center;gap:22px;
+}
+.se-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px}
+.se-logo-mark{
+width:34px;height:34px;border-radius:9px;
+background:linear-gradient(135deg,var(--se-neon),#c2410c);
+display:grid;place-items:center;color:#140b04;
+}
+.se-logo-mark svg{width:16px;height:16px}
+.se-logo small{display:block;font-size:10.5px;font-weight:400;color:var(--se-sub);letter-spacing:2px}
+.se-nav{display:flex;gap:4px;margin-left:8px;flex:1}
+.se-nav a{
+font-size:14.5px;color:var(--se-sub);padding:8px 12px;border-radius:8px;
+transition:.2s;
+}
+.se-nav a:hover{color:var(--se-txt);background:var(--se-bg3)}
+.se-nav a.se-nav-active{color:var(--se-neon);position:relative}
+.se-nav a.se-nav-active::after{
+content:"";position:absolute;left:12px;right:12px;bottom:2px;height:2px;
+background:var(--se-neon);border-radius:2px;
+}
+.se-head-tools{display:flex;align-items:center;gap:10px}
+.se-search{
+display:flex;align-items:center;gap:6px;
+background:var(--se-bg2);border:1px solid var(--se-line);
+border-radius:9px;padding:5px 6px 5px 11px;
+transition:.2s;
+}
+.se-search:focus-within{border-color:var(--se-neon);box-shadow:0 0 0 3px rgba(255,138,61,.14)}
+.se-search input{
+background:none;border:none;outline:none;color:var(--se-txt);
+width:150px;font-size:13.5px;
+}
+.se-search input::placeholder{color:#617084}
+.se-search button{
+background:var(--se-neon);border:none;color:#1a1008;
+font-size:12.5px;font-weight:700;border-radius:6px;padding:4px 10px;
+}
+.se-search-tip{position:relative}
+.se-tip-pop{
+position:absolute;top:calc(100% + 8px);right:0;width:250px;
+background:var(--se-bg3);border:1px solid var(--se-line);
+border-radius:10px;padding:12px 14px;font-size:12.5px;color:var(--se-sub);
+display:none;box-shadow:0 14px 34px rgba(0,0,0,.5);z-index:130;
+}
+.se-tip-pop.se-show{display:block}
+.se-tip-pop strong{color:var(--se-neon2);display:block;margin-bottom:4px;font-size:13px}
+.se-burger{
+display:none;background:var(--se-bg2);border:1px solid var(--se-line);
+border-radius:9px;color:var(--se-txt);width:40px;height:40px;font-size:17px;
+}
+.se-mobile-nav{display:none;border-top:1px solid var(--se-line);background:var(--se-bg2)}
+.se-mobile-nav.se-open{display:block}
+.se-mobile-nav a{display:block;padding:13px 24px;font-size:15px;border-bottom:1px solid #212934;color:var(--se-sub)}
+.se-mobile-nav a:hover{color:var(--se-neon)}
+
+/* ===== hero ===== */
+.se-hero{
+position:relative;overflow:hidden;
+border-bottom:1px solid var(--se-line);
+background:
+radial-gradient(1100px 460px at 78% -12%,rgba(255,138,61,.17),transparent 60%),
+radial-gradient(760px 380px at 12% 108%,rgba(79,209,197,.12),transparent 62%),
+var(--se-bg);
+}
+.se-hero-grid{
+display:grid;grid-template-columns:1.05fr .95fr;gap:46px;
+padding:62px 22px 66px;max-width:var(--se-max);margin:0 auto;align-items:center;
+}
+.se-hero-tag{
+display:inline-flex;align-items:center;gap:8px;
+font-size:12.5px;letter-spacing:1.5px;color:var(--se-neon2);
+border:1px solid #4a3a22;background:rgba(255,209,102,.07);
+padding:4px 13px;border-radius:30px;margin-bottom:20px;
+}
+.se-hero-tag i{width:6px;height:6px;border-radius:50%;background:var(--se-neon);display:inline-block;animation:sePulse 1.8s infinite}
+@keyframes sePulse{0%,100%{opacity:1}50%{opacity:.3}}
+h1.se-h1{
+font-size:44px;line-height:1.22;letter-spacing:.5px;font-weight:800;
+margin-bottom:16px;
+}
+h1.se-h1 em{
+font-style:normal;
+background:linear-gradient(100deg,var(--se-neon),var(--se-neon2) 70%);
+-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.se-hero-lead{font-size:16px;color:#c3cdd9;margin-bottom:22px;max-width:560px}
+.se-hero-stats{display:flex;gap:34px;margin:26px 0 28px;flex-wrap:wrap}
+.se-hero-stats b{display:block;font-size:26px;color:var(--se-neon2);font-weight:800;line-height:1.2}
+.se-hero-stats span{font-size:12.5px;color:var(--se-sub);letter-spacing:.5px}
+.se-hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.se-btn{
+display:inline-flex;align-items:center;gap:8px;
+padding:11px 22px;border-radius:10px;font-size:14.5px;font-weight:600;
+border:1px solid transparent;transition:.22s;
+}
+.se-btn-primary{background:linear-gradient(120deg,var(--se-neon),#ef6c1c);color:#170d05;box-shadow:0 8px 22px rgba(255,138,61,.28)}
+.se-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(255,138,61,.4)}
+.se-btn-ghost{background:transparent;border-color:var(--se-line);color:var(--se-txt)}
+.se-btn-ghost:hover{border-color:var(--se-cyan);color:var(--se-cyan)}
+
+.se-hero-visual{position:relative}
+.se-hero-cover{
+position:relative;border-radius:18px;overflow:hidden;
+border:1px solid #33404f;
+box-shadow:0 30px 70px rgba(0,0,0,.55);
+}
+.se-hero-cover img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.se-hero-cover::after{
+content:"";position:absolute;inset:0;
+background:linear-gradient(180deg,transparent 40%,rgba(8,10,13,.72));
+}
+.se-play-badge{
+position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+width:62px;height:62px;border-radius:50%;
+background:rgba(255,138,61,.92);display:grid;place-items:center;
+color:#1a1008;z-index:2;transition:.25s;box-shadow:0 0 0 10px rgba(255,138,61,.16);
+}
+.se-play-badge:hover{transform:translate(-50%,-50%) scale(1.08)}
+.se-hero-cover-meta{
+position:absolute;left:18px;bottom:14px;z-index:2;font-size:13px;
+}
+.se-hero-cover-meta strong{display:block;font-size:16px;color:#fff;margin-bottom:2px}
+.se-hero-cover-meta span{color:#c8d2dd}
+.se-hero-float{
+position:absolute;right:-10px;bottom:-18px;
+background:var(--se-bg3);border:1px solid var(--se-line);
+border-radius:12px;padding:11px 15px;font-size:12.5px;color:var(--se-sub);
+box-shadow:0 14px 34px rgba(0,0,0,.5);max-width:220px;
+}
+.se-hero-float b{color:var(--se-cyan);display:block;font-size:14px;margin-bottom:3px}
+
+/* ===== section base ===== */
+.se-section{padding:70px 22px;max-width:var(--se-max);margin:0 auto}
+.se-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:30px;flex-wrap:wrap}
+.se-kicker{font-size:12px;letter-spacing:2.5px;color:var(--se-neon);font-weight:700;margin-bottom:8px}
+h2.se-h2{font-size:27px;line-height:1.32;font-weight:800;letter-spacing:.3px}
+h2.se-h2 small{display:block;font-size:13.5px;color:var(--se-sub);font-weight:400;margin-top:7px;letter-spacing:.5px}
+.se-viewall{font-size:13.5px;color:var(--se-sub);border-bottom:1px dashed #44505f;padding-bottom:2px}
+.se-viewall:hover{color:var(--se-neon);border-color:var(--se-neon)}
+
+/* ===== focus ===== */
+.se-focus-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:20px}
+.se-focus-main{
+position:relative;border-radius:var(--se-radius);overflow:hidden;
+border:1px solid var(--se-line);background:var(--se-bg2);
+}
+.se-focus-main img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.se-focus-body{padding:20px 22px 22px}
+.se-focus-body h3{font-size:20px;margin-bottom:8px;line-height:1.4}
+.se-focus-body p{font-size:14px;color:var(--se-sub);margin-bottom:14px}
+.se-tagrow{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
+.se-tag{
+font-size:11.5px;color:var(--se-cyan);background:rgba(79,209,197,.09);
+border:1px solid rgba(79,209,197,.28);padding:2px 9px;border-radius:20px;
+}
+.se-tag.se-tag-warm{color:var(--se-neon2);background:rgba(255,209,102,.08);border-color:rgba(255,209,102,.28)}
+.se-meta-row{display:flex;align-items:center;gap:14px;font-size:12.5px;color:#7d8b9c;flex-wrap:wrap}
+.se-focus-side{display:grid;grid-template-rows:repeat(2,1fr);gap:20px}
+.se-mini-card{
+display:flex;gap:14px;background:var(--se-bg2);
+border:1px solid var(--se-line);border-radius:var(--se-radius);
+padding:13px;transition:.22s;
+}
+.se-mini-card:hover{border-color:#3d4c5e;transform:translateY(-2px)}
+.se-mini-thumb{flex:0 0 132px;border-radius:9px;overflow:hidden;position:relative}
+.se-mini-thumb img{width:132px;height:82px;object-fit:cover}
+.se-mini-thumb .se-tri{
+position:absolute;right:6px;bottom:6px;width:22px;height:22px;border-radius:5px;
+background:rgba(15,18,22,.72);display:grid;place-items:center;color:var(--se-neon);
+}
+.se-mini-body h4{font-size:14.5px;line-height:1.42;margin-bottom:6px}
+.se-mini-body p{font-size:12.5px;color:var(--se-sub);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* ===== video stream ===== */
+.se-stream{background:var(--se-bg2);border-top:1px solid var(--se-line);border-bottom:1px solid var(--se-line)}
+.se-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.se-video-card{
+background:var(--se-bg3);border:1px solid var(--se-line);border-radius:var(--se-radius);
+overflow:hidden;transition:.25s;display:flex;flex-direction:column;
+}
+.se-video-card:hover{transform:translateY(-4px);border-color:#42536a;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.se-video-cover{position:relative;overflow:hidden}
+.se-video-cover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.4s}
+.se-video-card:hover .se-video-cover img{transform:scale(1.05)}
+.se-dur{
+position:absolute;right:9px;bottom:9px;font-size:11.5px;
+background:rgba(8,10,13,.78);color:#dfe7f0;padding:1px 7px;border-radius:4px;
+}
+.se-video-body{padding:15px 16px 16px;display:flex;flex-direction:column;gap:9px;flex:1}
+.se-video-body h3{font-size:15.5px;line-height:1.45;font-weight:700}
+.se-video-body .se-v-sum{font-size:12.8px;color:var(--se-sub);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.se-video-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;color:#7d8b9c;padding-top:6px;border-top:1px dashed #2b3541}
+.se-actions{display:flex;gap:6px}
+.se-act{
+background:none;border:1px solid var(--se-line);color:#8b98a8;
+border-radius:7px;font-size:11.5px;padding:3px 8px;display:inline-flex;align-items:center;gap:4px;transition:.2s;
+}
+.se-act:hover{border-color:var(--se-neon);color:var(--se-neon)}
+.se-act.se-on{color:var(--se-red);border-color:rgba(255,84,112,.5);background:rgba(255,84,112,.09)}
+
+/* ===== topics ===== */
+.se-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.se-topic{
+position:relative;border-radius:var(--se-radius);overflow:hidden;
+border:1px solid var(--se-line);min-height:230px;
+display:flex;flex-direction:column;justify-content:flex-end;
+padding:16px;color:#fff;transition:.25s;
+}
+.se-topic:hover{transform:translateY(-4px);border-color:#4c5f75}
+.se-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:.4s}
+.se-topic:hover img{transform:scale(1.06)}
+.se-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,10,13,.1) 20%,rgba(8,10,13,.86));z-index:1}
+.se-topic>div{position:relative;z-index:2}
+.se-topic h3{font-size:16px;margin-bottom:5px}
+.se-topic p{font-size:12px;color:#c5d0dc;margin-bottom:9px}
+.se-status{font-size:11px;padding:1px 8px;border-radius:20px;background:rgba(255,138,61,.2);border:1px solid rgba(255,138,61,.5);color:#ffd9b0}
+
+/* ===== creators ===== */
+.se-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.se-creator{
+background:var(--se-bg2);border:1px solid var(--se-line);border-radius:var(--se-radius);
+padding:20px 18px;text-align:center;transition:.25s;
+}
+.se-creator:hover{border-color:#42536a;transform:translateY(-3px)}
+.se-avatar{
+width:66px;height:66px;border-radius:50%;margin:0 auto 12px;
+display:grid;place-items:center;font-size:24px;font-weight:800;color:#1a1008;
+}
+.se-creator h3{font-size:15.5px;margin-bottom:3px}
+.se-creator .se-craft{font-size:12px;color:var(--se-cyan);margin-bottom:9px}
+.se-creator p{font-size:12.3px;color:var(--se-sub);min-height:54px;margin-bottom:12px}
+.se-creator-stats{display:flex;justify-content:center;gap:16px;font-size:11.5px;color:#7d8b9c;border-top:1px dashed #2b3541;padding-top:11px}
+.se-creator-stats b{color:var(--se-txt);display:block;font-size:13.5px}
+
+/* ===== intro long text ===== */
+.se-intro{background:linear-gradient(180deg,#101419,#131920);border-top:1px solid var(--se-line);border-bottom:1px solid var(--se-line)}
+.se-intro-inner{max-width:900px;margin:0 auto;padding:70px 22px}
+.se-intro h2{margin-bottom:8px}
+.se-intro .se-kicker{margin-bottom:10px}
+.se-intro p{font-size:14.8px;color:#b9c4d1;margin-bottom:16px;text-align:justify}
+.se-intro h3{font-size:17.5px;margin:26px 0 10px;color:var(--se-neon2);display:flex;align-items:center;gap:9px}
+.se-intro h3::before{content:"";width:4px;height:17px;border-radius:2px;background:var(--se-neon)}
+.se-intro blockquote{
+border-left:3px solid var(--se-cyan);background:rgba(79,209,197,.06);
+padding:13px 18px;border-radius:0 10px 10px 0;font-size:14px;color:#c8d3df;margin:22px 0;
+}
+
+/* ===== stories ===== */
+.se-story-section{background:var(--se-bg2);border-top:1px solid var(--se-line);border-bottom:1px solid var(--se-line)}
+.se-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.se-story{
+background:var(--se-bg3);border:1px solid var(--se-line);border-radius:var(--se-radius);
+padding:22px 20px;transition:.25s;
+}
+.se-story:hover{border-color:#42536a;transform:translateY(-3px)}
+.se-story-top{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.se-story-top .se-avatar{width:38px;height:38px;font-size:15px;margin:0}
+.se-story-top strong{font-size:13.5px;display:block}
+.se-story-top span{font-size:11.5px;color:#7d8b9c}
+.se-story h3{font-size:16px;line-height:1.45;margin-bottom:9px}
+.se-story p{font-size:13.2px;color:var(--se-sub)}
+
+/* ===== wall ===== */
+.se-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.se-wall-item{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--se-line)}
+.se-wall-item img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.se-wall-item:hover img{transform:scale(1.07)}
+.se-wall-item .se-wall-label{
+position:absolute;left:0;right:0;bottom:0;font-size:11px;color:#e8edf3;
+background:linear-gradient(180deg,transparent,rgba(8,10,13,.85));padding:16px 8px 6px;
+}
+.se-wall-big{grid-column:span 3;grid-row:span 2}
+.se-wall-mid{grid-column:span 2}
+.se-wall-sml{grid-column:span 1}
+.se-wall-big img{aspect-ratio:16/10}
+.se-wall-mid img{aspect-ratio:16/10}
+.se-wall-sml img{aspect-ratio:1/1}
+
+/* ===== reviews ===== */
+.se-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.se-review{
+background:var(--se-bg2);border:1px solid var(--se-line);border-radius:var(--se-radius);
+padding:18px 18px 16px;position:relative;
+}
+.se-review::before{
+content:"“";position:absolute;right:16px;top:4px;font-size:44px;
+color:rgba(255,138,61,.18);font-family:Georgia,serif;line-height:1;
+}
+.se-review-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.se-review-head .se-avatar{width:36px;height:36px;font-size:14px;margin:0}
+.se-review-head strong{font-size:13.5px;display:block}
+.se-review-head span{font-size:11.5px;color:#7d8b9c}
+.se-review p{font-size:13.2px;color:#b9c4d1}
+.se-stars{color:var(--se-neon2);font-size:12px;letter-spacing:2px;margin-top:10px}
+
+/* ===== news & faq ===== */
+.se-two-col{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.se-news-item{
+display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed #2b3541;
+}
+.se-news-item:last-child{border-bottom:none}
+.se-news-date{
+flex:0 0 62px;font-size:12px;color:var(--se-neon2);
+border-right:1px solid #2b3541;line-height:1.5;
+}
+.se-news-date b{display:block;font-size:16px;color:var(--se-txt)}
+.se-news-item h3{font-size:14.5px;margin-bottom:3px;line-height:1.5}
+.se-news-item p{font-size:12.5px;color:var(--se-sub)}
+.se-faq details{
+border:1px solid var(--se-line);border-radius:10px;background:var(--se-bg2);
+margin-bottom:10px;overflow:hidden;
+}
+.se-faq summary{
+padding:13px 16px;font-size:14px;cursor:pointer;list-style:none;
+display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.se-faq summary::-webkit-details-marker{display:none}
+.se-faq summary::after{content:"+";color:var(--se-neon);font-size:18px;font-weight:400}
+.se-faq details[open] summary::after{content:"−"}
+.se-faq details[open] summary{color:var(--se-neon2)}
+.se-faq .se-faq-body{padding:0 16px 14px;font-size:13px;color:var(--se-sub)}
+
+/* ===== contact ===== */
+.se-contact{
+background:linear-gradient(120deg,#1a2129,#221a13);
+border-top:1px solid var(--se-line);
+}
+.se-contact-inner{
+max-width:var(--se-max);margin:0 auto;padding:62px 22px;
+display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;
+}
+.se-contact h2{font-size:26px;margin-bottom:12px;line-height:1.35}
+.se-contact p{font-size:14px;color:#b9c4d1;margin-bottom:18px}
+.se-contact-list{display:flex;flex-direction:column;gap:9px;font-size:13.5px;color:var(--se-sub)}
+.se-contact-list b{color:var(--se-neon2);font-weight:600}
+.se-contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.se-contact-panel{
+background:rgba(15,18,22,.55);border:1px solid var(--se-line);
+border-radius:16px;padding:24px 22px;
+}
+.se-contact-panel h3{font-size:16px;margin-bottom:12px}
+.se-contact-panel .se-partner-row{display:flex;flex-wrap:wrap;gap:8px}
+.se-partner{
+font-size:12px;color:var(--se-sub);border:1px solid var(--se-line);
+border-radius:20px;padding:4px 12px;background:var(--se-bg2);
+}
+.se-partner:hover{color:var(--se-cyan);border-color:rgba(79,209,197,.4)}
+
+/* ===== footer ===== */
+.se-footer{background:#0a0d11;border-top:1px solid var(--se-line);padding:46px 22px 30px}
+.se-footer-inner{max-width:var(--se-max);margin:0 auto}
+.se-footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;padding-bottom:30px;border-bottom:1px solid #1d242e}
+.se-footer-brand p{font-size:12.8px;color:#7d8b9c;margin-top:12px;max-width:290px}
+.se-footer-col h4{font-size:13.5px;margin-bottom:12px;color:var(--se-txt);letter-spacing:.5px}
+.se-footer-col a{display:block;font-size:12.8px;color:#7d8b9c;padding:4px 0}
+.se-footer-col a:hover{color:var(--se-neon)}
+.se-footer-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;font-size:12px;color:#5f6c7c}
+.se-footer-bottom a{color:#7d8b9c}
+.se-footer-bottom a:hover{color:var(--se-neon)}
+
+/* ===== toast & modal ===== */
+.se-toast{
+position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);
+background:#232c37;border:1px solid #3a4757;color:var(--se-txt);
+padding:10px 20px;border-radius:10px;font-size:13.5px;z-index:300;
+opacity:0;pointer-events:none;transition:.28s;box-shadow:0 14px 34px rgba(0,0,0,.5);
+}
+.se-toast.se-show{opacity:1;transform:translate(-50%,0)}
+.se-modal-mask{
+position:fixed;inset:0;background:rgba(5,7,10,.72);backdrop-filter:blur(4px);
+z-index:280;display:none;align-items:center;justify-content:center;padding:20px;
+}
+.se-modal-mask.se-show{display:flex}
+.se-modal{
+background:var(--se-bg2);border:1px solid var(--se-line);border-radius:16px;
+max-width:460px;width:100%;padding:26px 24px;position:relative;
+box-shadow:0 30px 80px rgba(0,0,0,.6);
+}
+.se-modal h3{font-size:18px;margin-bottom:10px}
+.se-modal p{font-size:13.4px;color:var(--se-sub);margin-bottom:16px}
+.se-modal .se-share-row{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:6px}
+.se-share-row button{
+background:var(--se-bg3);border:1px solid var(--se-line);color:var(--se-txt);
+border-radius:8px;padding:7px 14px;font-size:13px;
+}
+.se-share-row button:hover{border-color:var(--se-neon);color:var(--se-neon)}
+.se-modal-close{
+position:absolute;right:12px;top:10px;background:none;border:none;
+color:#7d8b9c;font-size:20px;
+}
+.se-modal-close:hover{color:var(--se-txt)}
+.se-backtop{
+position:fixed;right:22px;bottom:24px;width:44px;height:44px;border-radius:12px;
+background:var(--se-bg3);border:1px solid var(--se-line);color:var(--se-neon);
+font-size:18px;z-index:200;display:none;place-items:center;
+box-shadow:0 10px 26px rgba(0,0,0,.4);
+}
+.se-backtop.se-show{display:grid}
+.se-backtop:hover{border-color:var(--se-neon)}
+
+@media (max-width:1024px){
+.se-hero-grid{grid-template-columns:1fr;gap:34px;padding:44px 22px 52px}
+h1.se-h1{font-size:36px}
+.se-focus-grid{grid-template-columns:1fr}
+.se-video-grid{grid-template-columns:repeat(2,1fr)}
+.se-topic-grid{grid-template-columns:repeat(2,1fr)}
+.se-creator-grid{grid-template-columns:repeat(2,1fr)}
+.se-story-grid{grid-template-columns:repeat(2,1fr)}
+.se-review-grid{grid-template-columns:repeat(2,1fr)}
+.se-two-col{grid-template-columns:1fr}
+.se-contact-inner{grid-template-columns:1fr}
+.se-footer-top{grid-template-columns:1fr 1fr}
+.se-nav{display:none}
+.se-burger{display:grid;place-items:center}
+.se-search input{width:110px}
+}
+@media (max-width:680px){
+h1.se-h1{font-size:29px}
+.se-h2{font-size:22px}
+.se-video-grid,.se-creator-grid,.se-story-grid,.se-review-grid,.se-topic-grid{grid-template-columns:1fr}
+.se-wall{grid-template-columns:repeat(2,1fr)}
+.se-wall-big{grid-column:span 2;grid-row:span 1}
+.se-wall-mid{grid-column:span 1}
+.se-wall-sml{grid-column:span 1}
+.se-hero-stats{gap:22px}
+.se-head-tools .se-search{display:none}
+.se-announce-inner{padding:8px 14px}
+.se-hero-float{position:static;margin-top:14px;max-width:none}
+.se-contact h2{font-size:22px}
+.se-section{padding:52px 18px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="se-sticky-group">
+<div class="se-announce" id="seAnnounce">
+<div class="se-announce-inner">
+<span class="se-announce-badge">官方发布</span>
+<div class="se-announce-track" id="seAnnounceTrack">
+<span>黑兽第二季专题企划正式上线，新增 12 部原创深度解析影像</span>
+<span>创作者扶持计划冬季批次开放报名，投稿通道同步开启</span>
+<span>高清画质升级完成，全部精品内容支持 4K 呈现</span>
+<span>11·19 社区共创挑战赛投票进行中，欢迎参与</span>
+</div>
+<button class="se-announce-close" id="seAnnounceClose" aria-label="关闭公告">收起</button>
+</div>
+</div>
+
+<header class="se-header">
+<div class="se-header-inner">
+<a class="se-logo" href="#seTop">
+<span class="se-logo-mark" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+</span>
+<span>深幕视频<small>SHENMU VIDEO</small></span>
+</a>
+<nav class="se-nav" aria-label="主导航">
+<a href="#seTop" class="se-nav-active">首页</a>
+<a href="#seFocus">焦点内容</a>
+<a href="#seStream">热门影像</a>
+<a href="#seTopics">专题企划</a>
+<a href="#seCreators">创作者</a>
+<a href="#seIntro">深度解析</a>
+<a href="#seNews">企业动态</a>
+<a href="#seContact">联系我们</a>
+</nav>
+<div class="se-head-tools">
+<div class="se-search-tip">
+<form class="se-search" id="seSearchForm" role="search">
+<input type="search" id="seSearchInput" placeholder="搜索黑兽第二季内容" aria-label="站内搜索">
+<button type="submit">搜索</button>
+</form>
+<div class="se-tip-pop" id="seTipPop"></div>
+</div>
+<button class="se-burger" id="seBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+</div>
+</div>
+<div class="se-mobile-nav" id="seMobileNav">
+<a href="#seTop">首页</a>
+<a href="#seFocus">焦点内容</a>
+<a href="#seStream">热门影像</a>
+<a href="#seTopics">专题企划</a>
+<a href="#seCreators">创作者</a>
+<a href="#seIntro">深度解析</a>
+<a href="#seNews">企业动态</a>
+<a href="#seContact">联系我们</a>
+</div>
+</header>
+</div>
+
+<main id="seTop">
+
+<!-- HERO -->
+<section class="se-hero">
+<div class="se-hero-grid">
+<div>
+<span class="se-hero-tag"><i></i>官方网站 · 官方发布 · 品牌影像门户</span>
+<h1 class="se-h1">黑兽第二季<em>影像专题</em></h1>
+<p class="se-hero-lead">
+作为深耕影像内容领域的视频品牌，深幕视频官方网站围绕黑兽第二季打造完整内容生态：从正版高清影像到创作者深度访谈，从幕后手记到行业观察，让每一次观看都成为与作品、与同好之间的真实连接。
+</p>
+<div class="se-hero-stats">
+<div><b id="seStatVideo">128</b><span>精品内容单元</span></div>
+<div><b id="seStatCreator">46</b><span>签约创作者</span></div>
+<div><b id="seStatUser">72.5<span style="font-size:14px;color:#9aa7b6">万</span></b><span>社区用户</span></div>
+</div>
+<div class="se-hero-btns">
+<a class="se-btn se-btn-primary" href="#seFocus">进入焦点内容</a>
+<a class="se-btn se-btn-ghost" href="#seIntro">阅读深度解析</a>
+<button class="se-btn se-btn-ghost" type="button" id="seShareHero">分享专题</button>
+</div>
+</div>
+<div class="se-hero-visual">
+<div class="se-hero-cover">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2314202e'/%3E%3Cstop offset='.55' stop-color='%23233a52'/%3E%3Cstop offset='1' stop-color='%234a2a18'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g1)'/%3E%3Ccircle cx='520' cy='82' r='58' fill='%23ff8a3d' opacity='.22'/%3E%3Ccircle cx='520' cy='82' r='26' fill='%23ffd166' opacity='.5'/%3E%3Cpath d='M0 300 L120 232 L230 286 L350 208 L470 272 L640 200 L640 360 L0 360Z' fill='%230d1620' opacity='.9'/%3E%3Cpath d='M0 322 L150 268 L300 314 L440 250 L640 300 L640 360 L0 360Z' fill='%23080d14'/%3E%3Cg stroke='%234fd1c5' stroke-width='1.5' opacity='.4'%3E%3Cpath d='M70 120 L170 90 L250 130'/%3E%3Cpath d='M70 150 L190 132 L250 160'/%3E%3C/g%3E%3Crect x='62' y='196' width='150' height='6' rx='3' fill='%23ff8a3d' opacity='.8'/%3E%3Crect x='62' y='212' width='96' height='6' rx='3' fill='%23ffffff' opacity='.28'/%3E%3Ctext x='62' y='252' font-family='sans-serif' font-size='16' fill='%23e8edf3' opacity='.85'%3E黑兽第二季 · 影像资料片%3C/text%3E%3C/svg%3E" alt="黑兽第二季官方专题主视觉影像封面">
+<span class="se-play-badge" aria-hidden="true">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+</span>
+<div class="se-hero-cover-meta">
+<strong>黑兽第二季 · 官方专题资料片</strong>
+<span>正版高清 · 品牌原创影像企划第 03 期</span>
+</div>
+</div>
+<div class="se-hero-float">
+<b>本期更新 12 条</b>
+专题内容持续运营中，每周四固定上新，官方发布优先同步。
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOCUS -->
+<section class="se-section se-anchor" id="seFocus">
+<div class="se-section-head">
+<div>
+<div class="se-kicker">FOCUS · 焦点内容</div>
+<h2 class="se-h2">黑兽第二季 本期焦点<small>由官方编辑部与创作者共同挑选的精品内容，呈现完整内容生态</small></h2>
+</div>
+<a class="se-viewall" href="#seStream">查看全部影像</a>
+</div>
+<div class="se-focus-grid">
+<article class="se-focus-main">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23101b26'/%3E%3Cstop offset='.6' stop-color='%231b3145'/%3E%3Cstop offset='1' stop-color='%23502412'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='450' fill='url(%23f1)'/%3E%3Cg opacity='.85'%3E%3Cpath d='M80 340 L200 250 L330 310 L470 220 L600 290 L720 230 L720 450 L80 450Z' fill='%230b1219'/%3E%3C/g%3E%3Ccircle cx='580' cy='100' r='46' fill='%23ff8a3d' opacity='.3'/%3E%3Cg stroke='%23ffd166' stroke-width='2' opacity='.55'%3E%3Cpath d='M80 130 L180 108 L280 140 L380 104'/%3E%3C/g%3E%3Cg fill='%234fd1c5' opacity='.5'%3E%3Crect x='80' y='176' width='64' height='8' rx='4'/%3E%3Crect x='80' y='194' width='120' height='8' rx='4'/%3E%3Crect x='80' y='212' width='88' height='8' rx='4'/%3E%3C/g%3E%3Ctext x='80' y='292' font-family='sans-serif' font-size='26' font-weight='bold' fill='%23ffffff'%3E世界构建·幕后全记录%3C/text%3E%3Ctext x='80' y='324' font-family='sans-serif' font-size='15' fill='%23c5d0dc'%3E官方高清影像 · 42 分钟深度资料%3C/text%3E%3C/svg%3E" alt="黑兽第二季世界构建幕后全记录焦点影像封面">
+<div class="se-focus-body">
+<div class="se-tagrow">
+<span class="se-tag">官方发布</span>
+<span class="se-tag se-tag-warm">深度解析</span>
+<span class="se-tag">幕后手记</span>
+</div>
+<h3>黑兽第二季 · 世界构建幕后全记录</h3>
+<p>从场景设定到光影语言，本期焦点影像完整梳理黑兽第二季的视觉体系。创作者与制作团队面对面，讲述那些被观众忽略的细节：一段走廊的色温、一场夜戏的节奏、一个角色的呼吸感。这些背后的取舍，构成了作品真正的力量。</p>
+<div class="se-meta-row">
+<span>深幕编辑部 · 官方发布</span>
+<span>42:18</span>
+<span>2.6 万次收藏</span>
+<span>更新于 2026-11-17</span>
+</div>
+</div>
+</article>
+<div class="se-focus-side">
+<article class="se-mini-card">
+<div class="se-mini-thumb">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='m1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232b1b10'/%3E%3Cstop offset='1' stop-color='%235a3a1c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23m1)'/%3E%3Ccircle cx='250' cy='50' r='34' fill='%23ffd166' opacity='.35'/%3E%3Cpath d='M0 160 L90 120 L180 150 L270 110 L320 140 L320 200 L0 200Z' fill='%23140c06' opacity='.85'/%3E%3Cg stroke='%23ff8a3d' stroke-width='2' opacity='.6'%3E%3Cpath d='M30 60 L90 46 L140 66'/%3E%3C/g%3E%3Ctext x='28' y='104' font-family='sans-serif' font-size='16' fill='%23ffe6c8'%3E角色弧光解读%3C/text%3E%3C/svg%3E" alt="黑兽第二季角色弧光解读影像缩略图">
+<span class="se-tri"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+</div>
+<div class="se-mini-body">
+<h4>角色弧光解读：三条叙事线的交汇点</h4>
+<p>创作者以时间线为轴，拆解主要角色在第二季中的选择与代价。</p>
+<div class="se-meta-row" style="margin-top:8px"><span>18:42</span><span>人物访谈</span></div>
+</div>
+</article>
+<article class="se-mini-card">
+<div class="se-mini-thumb">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='m2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230d2027'/%3E%3Cstop offset='1' stop-color='%23163a44'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23m2)'/%3E%3Cg stroke='%234fd1c5' stroke-width='1.6' opacity='.55' fill='none'%3E%3Ccircle cx='160' cy='100' r='52'/%3E%3Ccircle cx='160' cy='100' r='76'/%3E%3Cpath d='M160 40 L160 160 M100 100 L220 100'/%3E%3C/g%3E%3Ccircle cx='160' cy='100' r='18' fill='%23ff8a3d' opacity='.75'/%3E%3Ctext x='26' y='182' font-family='sans-serif' font-size='15' fill='%23d7f4f1'%3E声画语言拆解%3C/text%3E%3C/svg%3E" alt="黑兽第二季声画语言拆解影像缩略图">
+<span class="se-tri"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+</div>
+<div class="se-mini-body">
+<h4>声画语言拆解：配乐如何推动情绪</h4>
+<p>从低频铺陈到主题动机变奏，听见叙事之外的第二层表达。</p>
+<div class="se-meta-row" style="margin-top:8px"><span>26:05</span><span>实用技巧</span></div>
+</div>
+</article>
+<article class="se-mini-card">
+<div class="se-mini-thumb">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='m3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23221a2e'/%3E%3Cstop offset='1' stop-color='%23382a4a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23m3)'/%3E%3Cg fill='%23b48ce0' opacity='.55'%3E%3Crect x='40' y='120' width='18' height='48' rx='4'/%3E%3Crect x='70' y='96' width='18' height='72' rx='4'/%3E%3Crect x='100' y='132' width='18' height='36' rx='4'/%3E%3Crect x='130' y='82' width='18' height='86' rx='4'/%3E%3Crect x='160' y='110' width='18' height='58' rx='4'/%3E%3Crect x='190' y='68' width='18' height='100' rx='4'/%3E%3Crect x='220' y='124' width='18' height='44' rx='4'/%3E%3C/g%3E%3Ccircle cx='272' cy='58' r='22' fill='%23ffd166' opacity='.4'/%3E%3Ctext x='36' y='52' font-family='sans-serif' font-size='15' fill='%23e6dcf7'%3E社区共创挑战赛%3C/text%3E%3C/svg%3E" alt="黑兽第二季社区共创挑战赛影像缩略图">
+<span class="se-tri"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+</div>
+<div class="se-mini-body">
+<h4>社区共创挑战赛：用你的镜头重述故事</h4>
+<p>投稿通道开启中，优秀作品将进入官方专题推荐位。</p>
+<div class="se-meta-row" style="margin-top:8px"><span>09:36</span><span>比赛报名</span></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- STREAM -->
+<section class="se-stream se-anchor" id="seStream">
+<div class="se-section">
+<div class="se-section-head">
+<div>
+<div class="se-kicker">STREAM · 热门影像</div>
+<h2 class="se-h2">黑兽第二季 热门视频流<small>多题材并行，日常记录、经验分享与深度测评在此交汇</small></h2>
+</div>
+<a class="se-viewall" href="#seTopics">浏览专题企划</a>
+</div>
+<div class="se-video-grid" id="seVideoGrid">
+
+<article class="se-video-card">
+<div class="se-video-cover">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2312212e'/%3E%3Cstop offset='1' stop-color='%232e4a63'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='225' fill='url(%23v1)'/%3E%3Cpath d='M0 180 L80 140 L160 170 L250 126 L330 158 L400 130 L400 225 L0 225Z' fill='%230b1319' opacity='.9'/%3E%3Cg stroke='%23ffd166' stroke-width='1.6' fill='none' opacity='.6'%3E%3Cpath d='M40 60 L110 44 L170 66 L240 40'/%3E%3C/g%3E%3Ctext x='40' y='104' font-family='sans-serif' font-size='17' fill='%23ffffff'%3E叙事结构梳理%3C/text%3E%3C/svg%3E" alt="黑兽第二季叙事结构梳理视频封面">
+<span class="se-dur">21:34</span>
+</div>
+<div class="se-video-body">
+<h3>用三条时间线，重新理解黑兽第二季的叙事结构</h3>
+<p class="se-v-sum">创作者把散落在各集的信息重新编排，第一次让观众清晰看见因果链条如何闭合。</p>
+<div class="se-tagrow"><span class="se-tag">深度解析</span><span class="se-tag se-tag-warm">经验分享</span></div>
+<div class="se-video-foot">
+<span>林间放映室</span>
+<div class="se-actions">
+<button class="se-act" type="button" data-act="like" data-count="2381">♡ <span>2381</span></button>
+<button class="se-act" type="button" data-act="save">收藏</button>
+</div>
+</div>
+</div>
+</article>
+
+<article class="se-video-card">
+<div class="se-video-cover">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Cdefs%3E%3ClinearGradient id='v2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23301c10'/%3E%3Cstop offset='1' stop-color='%23663d17'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='225' fill='url(%23v2)'/%3E%3Ccircle cx='320' cy='56' r='34' fill='%23ff8a3d' opacity='.45'/%3E%3Cg fill='%23804a1c' opacity='.8'%3E%3Crect x='40' y='130' width='46' height='60' rx='5'/%3E%3Crect x='96' y='104' width='46' height='86' rx='5'/%3E%3Crect x='152' y='146' width='46' height='44' rx='5'/%3E%3C/g%3E%3Cg stroke='%23ffd166' stroke-width='1.6' opacity='.55' fill='none'%3E%3Cpath d='M40 88 L100 72 L170 92 L230 70'/%3E%3C/g%3E%3Ctext x='40' y='52' font-family='sans-serif' font-size='17' fill='%23ffe6c8'%3E场景美术手记%3C/text%3E%3C/svg%3E" alt="黑兽第二季场景美术设计手记视频封面">
+<span class="se-dur">16:08</span>
+</div>
+<div class="se-video-body">
+<h3>场景美术手记：一座城的建造逻辑与材质选择</h3>
+<p class="se-v-sum">从草图到成片，美术团队讲述如何在有限预算里完成可信的世界质感。</p>
+<div class="se-tagrow"><span class="se-tag">创作幕后</span><span class="se-tag se-tag-warm">艺术美学</span></div>
+<div class="se-video-foot">
+<span>木构工作室</span>
+<div class="se-actions">
+<button class="se-act" type="button" data-act="like" data-count="1863">♡ <span>1863</span></button>
+<button class="se-act" type="button" data-act="save">收藏</button>
+</div>
+</div>
+</div>
+</article>
+
+<article class="se-video-card">
+<div class="se-video-cover">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Cdefs%3E%3ClinearGradient id='v3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230e2422'/%3E%3Cstop offset='1' stop-color='%231a463f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='225' fill='url(%23v3)'/%3E%3Cg stroke='%234fd1c5' stroke-width='1.6' opacity='.55' fill='none'%3E%3Ccircle cx='200' cy='112' r='54'/%3E%3Cpath d='M200 58 L200 166 M146 112 L254 112'/%3E%3C/g%3E%3Ccircle cx='200' cy='112' r='16' fill='%23ffd166' opacity='.85'/%3E%3Ctext x='34' y='50' font-family='sans-serif' font-size='17' fill='%23d7f4f1'%3E声音设计课%3C/text%3E%3Ctext x='34' y='200' font-family='sans-serif' font-size='13' fill='%239fc9c5'%3E课程干货 · 适合入门创作者%3C/text%3E%3C/svg%3E" alt="黑兽第二季声音设计入门课程视频封面">
+<span class="se-dur">28:52</span>
+</div>
+<div class="se-video-body">
+<h3>声音设计入门课：用一层环境音撑起整场戏</h3>
+<p class="se-v-sum">从素材采集到混音层级，一步步示范如何让画面之外的空间也具备说服力。</p>
+<div class="se-tagrow"><span class="se-tag">教程干货</span><span class="se-tag se-tag-warm">实用技巧</span></div>
+<div class="se-video-foot">
+<span>听觉研究所</span>
+<div class="se-actions">
+<button class="se-act" type="button" data-act="like" data-count="3120">♡ <span>3120</span></button>
+<button class="se-act" type="button" data-act="save">收藏</button>
+</div>
+</div>
+</div>
+</article>
+
+<article class="se-video-card">
+<div class="se-video-cover">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Cdefs%3E%3ClinearGradient id='v4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23231830'/%3E%3Cstop offset='1' stop-color='%234a2a5e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='225' fill='url(%23v4)'/%3E%3Cg fill='%23d8b4f0' opacity='.5'%3E%3Crect x='46' y='140' width='16' height='46' rx='4'/%3E%3Crect x='74' y='116' width='16' height='70' rx='4'/%3E%3Crect x='102' y='152' width='16' height='34' rx='4'/%3E%3Crect x='130' y='102' width='16' height='84' rx='4'/%3E%3Crect x='158' y='128' width='16' height='58' rx='4'/%3E%3C/g%3E%3Ccircle cx='300' cy='80' r='40' fill='%23ff8a3d' opacity='.35'/%3E%3Ctext x='46' y='66' font-family='sans-serif' font-size='17' fill='%23efe4fa'%3E同好线下放映%3C/text%3E%3C/svg%3E" alt="黑兽第二季同好线下放映活动记录视频封面">
+<span class="se-dur">11:20</span>
+</div>
+<div class="se-video-body">
+<h3>同好线下放映纪录：一群人如何讨论一部作品</h3>
+<p class="se-v-sum">记录本次社区放映会的完整现场，真实交流比弹幕更慢，也更深。</p>
+<div class="se-tagrow"><span class="se-tag">日常记录</span><span class="se-tag se-tag-warm">情感故事</span></div>
+<div class="se-video-foot">
+<span>周末场记</span>
+<div class="se-actions">
+<button class="se-act" type="button" data-act="like" data-count="964">♡ <span>964</span></button>
+<button class="se-act" type="button" data-act="save">收藏</button>
+</div>
+</div>
+</div>
+</article>
+
+<article class="se-video-card">
+<div class="se-video-cover">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Cdefs%3E%3ClinearGradient id='v5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23101c28'/%3E%3Cstop offset='1' stop-color='%231e3550'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='225' fill='url(%23v5)'/%3E%3Cpath d='M0 190 L90 150 L180 182 L270 138 L360 172 L400 152 L400 225 L0 225Z' fill='%23090f16'/%3E%3Cg stroke='%23ff8a3d' stroke-width='2' opacity='.65' fill='none'%3E%3Cpath d='M42 74 L112 58 L182 78'/%3E%3C/g%3E%3Crect x='42' y='96' width='132' height='9' rx='4' fill='%23ffffff' opacity='.7'/%3E%3Crect x='42' y='116' width='96' height='9' rx='4' fill='%23ffffff' opacity='.32'/%3E%3Ctext x='42' y='62' font-family='sans-serif' font-size='17' fill='%23ffd9b0'%3E人物访谈录%3C/text%3E%3C/svg%3E" alt="黑兽第二季主创人物访谈录视频封面">
+<span class="se-dur">34:47</span>
+</div>
+<div class="se-video-body">
+<h3>人物访谈录：主创谈第二季的取舍与坚持</h3>
+<p class="se-v-sum">关于节奏、关于角色、关于那些最终被删掉的段落，一次坦诚的长谈。</p>
+<div class="se-tagrow"><span class="se-tag">人物访谈</span><span class="se-tag se-tag-warm">品牌故事</span></div>
+<div class="se-video-foot">
+<span>深幕对话组</span>
+<div class="se-actions">
+<button class="se-act" type="button" data-act="like" data-count="4210">♡ <span>4210</span></button>
+<button class="se-act" type="button" data-act="save">收藏</button>
+</div>
+</div>
+</div>
+</article>
+
+<article class="se-video-card">
+<div class="se-video-cover">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Cdefs%3E%3ClinearGradient id='v6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23141c14'/%3E%3Cstop offset='1' stop-color='%232c3f22'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='225' fill='url(%23v6)'/%3E%3Cg fill='%237fae5c' opacity='.55'%3E%3Ccircle cx='90' cy='86' r='30'/%3E%3Ccircle cx='150' cy='112' r='22'/%3E%3Ccircle cx='60' cy='140' r='18'/%3E%3C/g%3E%3Cpath d='M0 178 L100 144 L200 174 L300 132 L400 164 L400 225 L0 225Z' fill='%230b1209'/%3E%3Ctext x='42' y='198' font-family='sans-serif' font-size='16' fill='%23dcecc9'%3E户外取景攻略%3C/text%3E%3C/svg%3E" alt="黑兽第二季取景地户外探索攻略视频封面">
+<span class="se-dur">13:29</span>
+</div>
+<div class="se-video-body">
+<h3>取景地户外探索：寻找影像里的真实地貌</h3>
+<p class="se-v-sum">带上相机与地图，去看看那些被镜头选中的山谷、林道与旧石墙。</p>
+<div class="se-tagrow"><span class="se-tag">城市探索</span><span class="se-tag se-tag-warm">旅行见闻</span></div>
+<div class="se-video-foot">
+<span>野外取景人</span>
+<div class="se-actions">
+<button class="se-act" type="button" data-act="like" data-count="1520">♡ <span>1520</span></button>
+<button class="se-act" type="button" data-act="save">收藏</button>
+</div>
+</div>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- TOPICS -->
+<section class="se-section se-anchor" id="seTopics">
+<div class="se-section-head">
+<div>
+<div class="se-kicker">SERIES · 专题企划</div>
+<h2 class="se-h2">黑兽第二季 专题企划<small>由官方发起的长期内容企划，持续更新，开放共创</small></h2>
+</div>
+<a class="se-viewall" href="#seCreators">认识创作者</a>
+</div>
+<div class="se-topic-grid">
+<article class="se-topic">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23172a3a'/%3E%3Cstop offset='1' stop-color='%23402a16'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='360' fill='url(%23t1)'/%3E%3Ccircle cx='220' cy='80' r='46' fill='%23ff8a3d' opacity='.3'/%3E%3Cg stroke='%234fd1c5' stroke-width='1.6' opacity='.5' fill='none'%3E%3Cpath d='M30 180 L100 150 L170 184 L240 146'/%3E%3C/g%3E%3Ctext x='30' y='250' font-family='sans-serif' font-size='20' font-weight='bold' fill='%23ffffff'%3E世界构建%3C/text%3E%3C/svg%3E" alt="黑兽第二季世界构建专题企划封面">
+<div>
+<h3>世界构建计划</h3>
+<p>从地理、制度到日常器物，系统性梳理设定体系。</p>
+<span class="se-status">持续更新 · 已更 18 期</span>
+</div>
+</article>
+<article class="se-topic">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360'%3E%3Cdefs%3E%3ClinearGradient id='t2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23251024'/%3E%3Cstop offset='1' stop-color='%234a1d3c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='360' fill='url(%23t2)'/%3E%3Cg fill='%23f0a8c8' opacity='.45'%3E%3Crect x='40' y='150' width='20' height='70' rx='5'/%3E%3Crect x='76' y='120' width='20' height='100' rx='5'/%3E%3Crect x='112' y='164' width='20' height='56' rx='5'/%3E%3C/g%3E%3Ccircle cx='228' cy='92' r='36' fill='%23ffd166' opacity='.4'/%3E%3Ctext x='40' y='96' font-family='sans-serif' font-size='20' font-weight='bold' fill='%23ffe4f1'%3E人物档案%3C/text%3E%3C/svg%3E" alt="黑兽第二季人物档案专题企划封面">
+<div>
+<h3>人物档案室</h3>
+<p>逐位拆解动机与转折，收录创作者独立观点。</p>
+<span class="se-status">持续更新 · 已更 24 期</span>
+</div>
+</article>
+<article class="se-topic">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360'%3E%3Cdefs%3E%3ClinearGradient id='t3' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%230d2320'/%3E%3Cstop offset='1' stop-color='%231b4438'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='360' fill='url(%23t3)'/%3E%3Cg stroke='%234fd1c5' stroke-width='1.5' opacity='.5' fill='none'%3E%3Ccircle cx='150' cy='130' r='46'/%3E%3Ccircle cx='150' cy='130' r='72'/%3E%3C/g%3E%3Ctext x='34' y='250' font-family='sans-serif' font-size='20' font-weight='bold' fill='%23dcf5f0'%3E幕后技术%3C/text%3E%3C/svg%3E" alt="黑兽第二季幕后技术专题企划封面">
+<div>
+<h3>幕后技术公开课</h3>
+<p>摄影、灯光、调色与混音的完整制作流程分享。</p>
+<span class="se-status">报名中 · 第 6 季</span>
+</div>
+</article>
+<article class="se-topic">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360'%3E%3Cdefs%3E%3ClinearGradient id='t4' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23221c10'/%3E%3Cstop offset='1' stop-color='%234a3a14'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='360' fill='url(%23t4)'/%3E%3Cg fill='%23ffd166' opacity='.5'%3E%3Ccircle cx='90' cy='120' r='26'/%3E%3Ccircle cx='190' cy='160' r='18'/%3E%3Ccircle cx='130' cy='200' r='12'/%3E%3C/g%3E%3Ctext x='34' y='272' font-family='sans-serif' font-size='20' font-weight='bold' fill='%23fff1c9'%3E共创挑战%3C/text%3E%3C/svg%3E" alt="黑兽第二季社区共创挑战赛专题企划封面">
+<div>
+<h3>社区共创挑战赛</h3>
+<p>用你的镜头语言重述故事，优秀作品进入官方推荐。</p>
+<span class="se-status">投票进行中 · 截止 12-08</span>
+</div>
+</article>
+</div>
+</section>
+
+<!-- CREATORS -->
+<section class="se-section se-anchor" id="seCreators" style="border-top:1px solid var(--se-line)">
+<div class="se-section-head">
+<div>
+<div class="se-kicker">CREATORS · 创作者矩阵</div>
+<h2 class="se-h2">黑兽第二季 内容创作者<small>深耕垂直领域的原创作者，构成平台真实的内容生态</small></h2>
+</div>
+<a class="se-viewall" href="#seContact">申请入驻</a>
+</div>
+<div class="se-creator-grid">
+<article class="se-creator">
+<div class="se-avatar" style="background:linear-gradient(135deg,#ff8a3d,#ffd166)">林</div>
+<h3>林间放映室</h3>
+<div class="se-craft">叙事解析 · 深度测评</div>
+<p>擅长把复杂结构讲清楚，作品节奏克制，注重证据与细节的对应关系。</p>
+<div class="se-creator-stats">
+<div><b>68</b>作品</div>
+<div><b>12.4万</b>关注</div>
+</div>
+</article>
+<article class="se-creator">
+<div class="se-avatar" style="background:linear-gradient(135deg,#4fd1c5,#2b8a83)">木</div>
+<h3>木构工作室</h3>
+<div class="se-craft">美术设计 · 创作幕后</div>
+<p>从草图、材质到实景搭建，专注记录影像背后的手工过程与工艺选择。</p>
+<div class="se-creator-stats">
+<div><b>41</b>作品</div>
+<div><b>8.7万</b>关注</div>
+</div>
+</article>
+<article class="se-creator">
+<div class="se-avatar" style="background:linear-gradient(135deg,#b48ce0,#6d4aa8)">听</div>
+<h3>听觉研究所</h3>
+<div class="se-craft">声音设计 · 教程干货</div>
+<p>以工程化方法拆解声音语言，课程体系完整，适合入门与进阶创作者。</p>
+<div class="se-creator-stats">
+<div><b>55</b>作品</div>
+<div><b>15.1万</b>关注</div>
+</div>
+</article>
+<article class="se-creator">
+<div class="se-avatar" style="background:linear-gradient(135deg,#ff5470,#a8263a)">野</div>
+<h3>野外取景人</h3>
+<div class="se-craft">户外探索 · 旅行见闻</div>
+<p>长期记录取景地现场，提供可复用的路线与拍摄时机建议。</p>
+<div class="se-creator-stats">
+<div><b>33</b>作品</div>
+<div><b>6.2万</b>关注</div>
+</div>
+</article>
+</div>
+</section>
+
+<!-- INTRO LONG -->
+<section class="se-intro se-anchor" id="seIntro">
+<div class="se-intro-inner">
+<div class="se-kicker">INSIGHT · 深度解析</div>
+<h2 class="se-h2">黑兽第二季 内容定位与品牌解析<small>一份面向新观众与长期同好的完整说明</small></h2>
+
+<p>深幕视频是一家持续运营的视频内容品牌，官方网站围绕影像内容的策划、制作、发布与社区互动展开。黑兽第二季作为平台本季度的重点专题之一，并不是孤立的一次内容上线，而是一条完整内容生态链的组成部分：官方发布负责信息校准，创作者矩阵负责多元表达，社区互动负责反馈与共创，三者共同构成一个可被长期信赖的内容场域。</p>
+
+<h3>一、为什么需要一个专题，而不是零散内容</h3>
+<p>影像内容的传播往往伴随大量零散讨论：有人关注叙事，有人关注美术，有人只想看看幕后。零散内容的问题在于信息彼此断裂，新观众进入门槛高，老观众难以形成系统认知。专题的意义就在于建立秩序感——它把不同角度的内容放进同一个框架内，让观看路径可以被理解、被推荐、被保存。</p>
+<p>黑兽第二季专题采用三层结构：第一层是官方资料与基础信息，确保准确性；第二层是创作者深度内容，提供多元视角；第三层是社区共创与互动，形成持续更新的活力。三层结构互相支撑，任何一层单独存在都不完整，这也是我们坚持做专题而非做合集的根本原因。</p>
+
+<h3>二、内容标准：正版、高清、可追溯</h3>
+<p>平台的每一份精品内容都遵循统一标准。画质方面，高清是基础要求，重点内容支持更高规格呈现；来源方面，坚持正版授权与原创制作，官方发布内容均有明确署名与更新时间；表达方面，鼓励观点鲜明但论据扎实，反对空洞的情绪表达与拼凑式剪辑。</p>
+<blockquote>我们希望创作者在讲述一部作品时，能给出理由，而不只是给出结论。理由让内容具备可讨论性，结论只带来站队。</blockquote>
+<p>这也是平台内容生态的重要原则。对观众而言，可追溯意味着可以顺着一条线索找到更多相关内容；对创作者而言，可追溯意味着每一次表达都经得起回看。长期来看，这种标准会沉淀为口碑，而口碑是视频品牌最难得的资产。</p>
+
+<h3>三、创作者生态：垂直领域的长期主义</h3>
+<p>深幕视频的创作者矩阵以垂直领域为核心组织方式。我们不追求账号数量的膨胀，而是关注每个领域是否拥有足够的深度表达者。叙事解析、美术设计、声音工程、户外探索、人物访谈、社区记录，这些方向彼此差异明显，却共同服务于同一部作品的完整理解。</p>
+<p>平台为创作者提供三类支持：制作层面的技术协作、分发层面的推荐机制、成长层面的扶持计划。扶持计划按季度开放，包含选题辅导、剪辑建议、标题与封面优化等内容。我们认为，创作者的成长不是一次培训能完成的，而是需要在持续发布与持续反馈中慢慢形成。</p>
+
+<h3>四、社区与共创：真实交流的价值</h3>
+<p>社区是平台活力的来源。围绕黑兽第二季，社区中已经形成了多个稳定的话题圈层：有人整理时间线，有人做场景对比，有人分享线下放映会的现场记录。这些内容不一定精致，却足够真实。真实是社区最珍贵的部分，也是任何算法推荐都无法替代的部分。</p>
+<p>我们通过共创挑战赛、投票、投稿征集等方式鼓励参与。挑战赛不设过高门槛，重视创意与完成度；投票机制公开透明，结果在专题页同步公示；投稿通道长期开放，优秀作品会进入官方推荐位。我们希望每位用户都能从观看者慢慢变成参与者，这是内容生态健康的标志。</p>
+
+<h3>五、品牌愿景：值得信赖的影像内容平台</h3>
+<p>深幕视频的定位始终清晰：做值得信赖的影像内容平台。信赖来自三个方向——信息的准确、内容的品质、互动的真诚。我们不追逐短期热点带来的流量波动，而是把精力放在内容标准的维护与创作者关系的经营上。</p>
+<p>黑兽第二季专题会持续更新，官方发布内容会标注时间，创作者内容会保留个人表达空间，社区互动会保持开放。这种稳定感本身，就是品牌想传递的东西。无论你是第一次接触这部作品，还是已经关注很久，都欢迎在本站找到属于自己的观看路径。</p>
+</div>
+</section>
+
+<!-- STORIES -->
+<section class="se-story-section">
+<div class="se-section">
+<div class="se-section-head">
+<div>
+<div class="se-kicker">STORIES · 故事随笔</div>
+<h2 class="se-h2">黑兽第二季 创作者手记<small>影像之外的文字记录，保留那些没被剪进正片的瞬间</small></h2>
+</div>
+</div>
+<div class="se-story-grid">
+<article class="se-story">
+<div class="se-story-top">
+<div class="se-avatar" style="background:linear-gradient(135deg,#ff8a3d,#ffd166);width:38px;height:38px;font-size:15px;margin:0">林</div>
+<div><strong>林间放映室</strong><span>2026-11-15</span></div>
+</div>
+<h3>把一集内容看七遍之后，我改掉了整个脚本</h3>
+<p>最初我以为自己已经看懂了节奏，直到第七遍才发现，真正推动情绪的不是台词，而是两次停顿之间的呼吸。那一次重写，让我第一次理解“慎重”这个词的分量。</p>
+</article>
+<article class="se-story">
+<div class="se-story-top">
+<div class="se-avatar" style="background:linear-gradient(135deg,#4fd1c5,#2b8a83);width:38px;height:38px;font-size:15px;margin:0">木</div>
+<div><strong>木构工作室</strong><span>2026-11-12</span></div>
+</div>
+<h3>为了一堵墙的颜色，我们试了十九种材料</h3>
+<p>最终上镜的那一种，其实是失败样品里最不起眼的一块。手工的乐趣就在这里——你永远不知道哪一次失误会变成答案。</p>
+</article>
+<article class="se-story">
+<div class="se-story-top">
+<div class="se-avatar" style="background:linear-gradient(135deg,#b48ce0,#6d4aa8);width:38px;height:38px;font-size:15px;margin:0">听</div>
+<div><strong>听觉研究所</strong><span>2026-11-09</span></div>
+</div>
+<h3>录制环境音那天，风比预想的大得多</h3>
+<p>我们把麦克风绑在树枝上等了三个小时，最后用上的只有十一秒。但那十一秒，让整场戏的空间忽然立了起来。</p>
+</article>
+</div>
+</div>
+</section>
+
+<!-- WALL -->
+<section class="se-section">
+<div class="se-section-head">
+<div>
+<div class="se-kicker">GALLERY · 影像墙</div>
+<h2 class="se-h2">黑兽第二季 社区作品墙<small>由用户上传的影像切片，多元视角拼出完整印象</small></h2>
+</div>
+<a class="se-viewall" href="#seContact">上传作品</a>
+</div>
+<div class="se-wall">
+<figure class="se-wall-item se-wall-big">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23152636'/%3E%3Cstop offset='1' stop-color='%233e2a17'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23w1)'/%3E%3Ccircle cx='500' cy='90' r='54' fill='%23ff8a3d' opacity='.28'/%3E%3Cpath d='M0 320 L130 260 L260 306 L400 240 L520 296 L640 250 L640 400 L0 400Z' fill='%230a1118'/%3E%3Cg stroke='%234fd1c5' stroke-width='1.6' opacity='.45' fill='none'%3E%3Cpath d='M60 150 L150 126 L240 152'/%3E%3C/g%3E%3Ctext x='60' y='220' font-family='sans-serif' font-size='24' font-weight='bold' fill='%23ffffff'%3E夜戏光影实验%3C/text%3E%3C/svg%3E" alt="社区用户夜戏光影实验影像作品">
+<figcaption class="se-wall-label">夜戏光影实验 · @南巷灯</figcaption>
+</figure>
+<figure class="se-wall-item se-wall-mid">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 260'%3E%3Cdefs%3E%3ClinearGradient id='w2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230f2422'/%3E%3Cstop offset='1' stop-color='%23214d42'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='420' height='260' fill='url(%23w2)'/%3E%3Cg stroke='%234fd1c5' stroke-width='1.5' opacity='.5' fill='none'%3E%3Ccircle cx='210' cy='130' r='48'/%3E%3Cpath d='M210 82 L210 178 M162 130 L258 130'/%3E%3C/g%3E%3Ctext x='34' y='52' font-family='sans-serif' font-size='18' fill='%23dcf5f0'%3E声波可视化尝试%3C/text%3E%3C/svg%3E" alt="社区用户声波可视化尝试影像作品">
+<figcaption class="se-wall-label">声波可视化尝试 · @拾音者</figcaption>
+</figure>
+<figure class="se-wall-item se-wall-mid">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 260'%3E%3Cdefs%3E%3ClinearGradient id='w3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23241730'/%3E%3Cstop offset='1' stop-color='%234a2a5e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='420' height='260' fill='url(%23w3)'/%3E%3Cg fill='%23d8b4f0' opacity='.5'%3E%3Crect x='60' y='150' width='16' height='56' rx='4'/%3E%3Crect x='90' y='126' width='16' height='80' rx='4'/%3E%3Crect x='120' y='164' width='16' height='42' rx='4'/%3E%3Crect x='150' y='110' width='16' height='96' rx='4'/%3E%3C/g%3E%3Ccircle cx='330' cy='90' r='34' fill='%23ff8a3d' opacity='.3'/%3E%3Ctext x='60' y='64' font-family='sans-serif' font-size='18' fill='%23efe4fa'%3E画面色彩重组%3C/text%3E%3C/svg%3E" alt="社区用户画面色彩重组影像作品">
+<figcaption class="se-wall-label">画面色彩重组 · @冷调调色师</figcaption>
+</figure>
+<figure class="se-wall-item se-wall-sml">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 260'%3E%3Cdefs%3E%3ClinearGradient id='w4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232a1f12'/%3E%3Cstop offset='1' stop-color='%23503a1a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='260' height='260' fill='url(%23w4)'/%3E%3Ccircle cx='130' cy='110' r='40' fill='%23ffd166' opacity='.4'/%3E%3Cpath d='M0 200 L70 168 L140 196 L210 160 L260 184 L260 260 L0 260Z' fill='%23120d07'/%3E%3C/svg%3E" alt="社区用户黄昏分镜速写影像作品">
+<figcaption class="se-wall-label">黄昏分镜速写 · @纸笔分镜</figcaption>
+</figure>
+<figure class="se-wall-item se-wall-sml">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 260'%3E%3Cdefs%3E%3ClinearGradient id='w5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23101d28'/%3E%3Cstop offset='1' stop-color='%231f3a52'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='260' height='260' fill='url(%23w5)'/%3E%3Cg stroke='%23ff8a3d' stroke-width='2' opacity='.55' fill='none'%3E%3Cpath d='M30 80 L100 62 L170 84 L230 64'/%3E%3C/g%3E%3Crect x='30' y='120' width='110' height='9' rx='4' fill='%23ffffff' opacity='.7'/%3E%3Crect x='30' y='140' width='76' height='9' rx='4' fill='%23ffffff' opacity='.35'/%3E%3C/svg%3E" alt="社区用户开场字幕设计影像作品">
+<figcaption class="se-wall-label">开场字幕设计 · @字体工坊</figcaption>
+</figure>
+<figure class="se-wall-item se-wall-sml">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 260'%3E%3Cdefs%3E%3ClinearGradient id='w6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232a1418'/%3E%3Cstop offset='1' stop-color='%23501e28'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='260' height='260' fill='url(%23w6)'/%3E%3Cg fill='%23ff5470' opacity='.45'%3E%3Ccircle cx='90' cy='100' r='24'/%3E%3Ccircle cx='160' cy='130' r='16'/%3E%3C/g%3E%3Ctext x='30' y='210' font-family='sans-serif' font-size='15' fill='%23ffd7de'%3E情绪板拼贴%3C/text%3E%3C/svg%3E" alt="社区用户情绪板拼贴影像作品">
+<figcaption class="se-wall-label">情绪板拼贴 · @视觉笔记</figcaption>
+</figure>
+<figure class="se-wall-item se-wall-sml">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 260'%3E%3Cdefs%3E%3ClinearGradient id='w7' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23141f16'/%3E%3Cstop offset='1' stop-color='%232c4024'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='260' height='260' fill='url(%23w7)'/%3E%3Cg fill='%237fae5c' opacity='.55'%3E%3Ccircle cx='80' cy='90' r='26'/%3E%3Ccircle cx='140' cy='120' r='18'/%3E%3C/g%3E%3Cpath d='M0 198 L80 168 L160 194 L260 160 L260 260 L0 260Z' fill='%230a110a'/%3E%3C/svg%3E" alt="社区用户取景地速写影像作品">
+<figcaption class="se-wall-label">取景地速写 · @山路拍客</figcaption>
+</figure>
+</div>
+</section>
+
+<!-- REVIEWS -->
+<section class="se-stream">
+<div class="se-section">
+<div class="se-section-head">
+<div>
+<div class="se-kicker">VOICES · 用户评价</div>
+<h2 class="se-h2">黑兽第二季 社区回声<small>来自不同观看角度的真实反馈，构成本站口碑的一部分</small></h2>
+</div>
+</div>
+<div class="se-review-grid">
+<article class="se-review">
+<div class="se-review-head">
+<div class="se-avatar" style="background:linear-gradient(135deg,#ff8a3d,#ffd166);width:36px;height:36px;font-size:14px;margin:0">周</div>
+<div><strong>周末不加班</strong><span>关注 2 年</span></div>
+</div>
+<p>最打动我的是专题的组织方式。以前看完作品只能到处翻讨论，现在顺着结构走一遍，很多细节自己就串起来了。</p>
+<div class="se-stars">★★★★★</div>
+</article>
+<article class="se-review">
+<div class="se-review-head">
+<div class="se-avatar" style="background:linear-gradient(135deg,#4fd1c5,#2b8a83);width:36px;height:36px;font-size:14px;margin:0">剪</div>
+<div><strong>剪辑学徒阿良</strong><span>创作者</span></div>
+</div>
+<p>声音设计那期我反复看了三遍，把时间轴截图做成了笔记。对初学者很友好，步骤讲得具体，不空谈理念。</p>
+<div class="se-stars">★★★★★</div>
+</article>
+<article class="se-review">
+<div class="se-review-head">
+<div class="se-avatar" style="background:linear-gradient(135deg,#b48ce0,#6d4aa8);width:36px;height:36px;font-size:14px;margin:0">夜</div>
+<div><strong>夜航船</strong><span>关注 1 年</span></div>
+</div>
+<p>线下放映会那期很意外，原本以为会很枯燥，结果看着一群人认真讨论，反而有点被治愈到。</p>
+<div class="se-stars">★★★★☆</div>
+</article>
+<article class="se-review">
+<div class="se-review-head">
+<div class="se-avatar" style="background:linear-gradient(135deg,#ff5470,#a8263a);width:36px;height:36px;font-size:14px;margin:0">远</div>
+<div><strong>远山与镜头</strong><span>创作者</span></div>
+</div>
+<p>取景地那期给了我很多实际帮助，路线和时间点写得很细，不是那种只看画面的空镜合集。</p>
+<div class="se-stars">★★★★★</div>
+</article>
+<article class="se-review">
+<div class="se-review-head">
+<div class="se-avatar" style="background:linear-gradient(135deg,#ffd166,#c28f1a);width:36px;height:36px;font-size:14px;margin:0">小</div>
+<div><strong>小满的笔记本</strong><span>关注 3 年</span></div>
+</div>
+<p>画质确实稳定，加载也快。我比较在意阅读体验，站内的排版和标题层级让我愿意多停留一会儿。</p>
+<div class="se-stars">★★★★☆</div>
+</article>
+<article class="se-review">
+<div class="se-review-head">
+<div class="se-avatar" style="background:linear-gradient(135deg,#7fae5c,#4a6b34);width:36px;height:36px;font-size:14px;margin:0">清</div>
+<div><strong>清晨六点半</strong><span>关注 半年</span></div>
+</div>
+<p>希望以后能多一些社区投稿的入口说明，我拍完作品不太确定该走什么流程，虽然弹窗里写了但还是想更明确一点。</p>
+<div class="se-stars">★★★★☆</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- NEWS & FAQ -->
+<section class="se-section se-anchor" id="seNews">
+<div class="se-two-col">
+<div>
+<div class="se-kicker">NEWS · 企业动态</div>
+<h2 class="se-h2">官方发布与更新日志<small>关于黑兽第二季专题与平台的近期变化</small></h2>
+<div class="se-news-item">
+<div class="se-news-date">11-17<b>2026</b></div>
+<div>
+<h3>黑兽第二季专题页完成第二次结构优化</h3>
+<p>新增创作者矩阵与共创挑战赛入口，内容检索路径缩短，搜索反馈更即时。</p>
+</div>
+</div>
+<div class="se-news-item">
+<div class="se-news-date">11-14<b>2026</b></div>
+<div>
+<h3>高清画质升级完成，重点内容支持更高规格</h3>
+<p>平台完成转码流程改造，全部精品内容画质提升，加载效率同步优化。</p>
+</div>
+</div>
+<div class="se-news-item">
+<div class="se-news-date">11-10<b>2026</b></div>
+<div>
+<h3>创作者扶持计划冬季批次开放报名</h3>
+<p>面向垂直领域原创作者，提供选题辅导、剪辑建议与推荐资源支持。</p>
+</div>
+</div>
+<div class="se-news-item">
+<div class="se-news-date">11-05<b>2026</b></div>
+<div>
+<h3>社区共创挑战赛投票机制上线</h3>
+<p>投票结果在专题页公示，提交作品后可获得实时反馈与作品页入口。</p>
+</div>
+</div>
+</div>
+<div class="se-faq">
+<div class="se-kicker">FAQ · 帮助中心</div>
+<h2 class="se-h2">常见问题<small>关于浏览、投稿与社区参与的说明</small></h2>
+<details>
+<summary>黑兽第二季专题的内容会持续更新吗？</summary>
+<div class="se-faq-body">会。专题采用持续运营方式，官方发布内容通常在每周四更新，创作者内容按各自节奏上线，重要更新会同步出现在页面顶部的公告条中。</div>
+</details>
+<details>
+<summary>如何参与社区共创挑战赛？</summary>
+<div class="se-faq-body">在专题企划区进入「社区共创挑战赛」入口，按页面提示提交作品信息与链接即可。作品需为原创，完成度与创意是主要评审维度，投票结果会在专题页公示。</div>
+</details>
+<details>
+<summary>投稿后多久会收到反馈？</summary>
+<div class="se-faq-body">一般在三个工作日内收到初步反馈。若作品需要补充素材或调整结构，编辑会给出具体建议，修改后可再次提交。</div>
+</details>
+<details>
+<summary>平台对画质有什么要求？</summary>
+<div class="se-faq-body">高清是基础标准，建议投稿使用 1080P 及以上规格。重点内容在通过审核后支持更高规格呈现，画质不足会影响推荐位展示。</div>
+</details>
+<details>
+<summary>能否转载站内的原创内容？</summary>
+<div class="se-faq-body">站内原创内容版权归创作者与平台共同所有，转载需获得书面授权并注明来源。商业用途请通过页面下方联系方式与我们沟通。</div>
+</details>
+<details>
+<summary>如何关注某位创作者？</summary>
+<div class="se-faq-body">在创作者矩阵中点击对应卡片即可查看档案与作品列表。关注后，该创作者的更新会出现在你的个性化推荐中。</div>
+</details>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="se-contact se-anchor" id="seContact">
+<div class="se-contact-inner">
+<div>
+<div class="se-kicker" style="margin-bottom:8px">CONTACT · 联系与投稿</div>
+<h2>与深幕视频一起，把黑兽第二季讲得更完整</h2>
+<p>无论你是想投稿作品、申请入驻，还是希望合作共建专题内容，都欢迎与我们联系。官方团队会在工作日内回复每一封邮件。</p>
+<div class="se-contact-list">
+<div><b>内容合作</b> · content@shenmu-video.example</div>
+<div><b>创作者入驻</b> · creator@shenmu-video.example</div>
+<div><b>商务与品牌</b> · brand@shenmu-video.example</div>
+<div><b>工作时间</b> · 周一至周五 10:00 - 19:00</div>
+</div>
+<div class="se-contact-actions">
+<button class="se-btn se-btn-primary" type="button" id="seSubmitBtn">我要投稿</button>
+<button class="se-btn se-btn-ghost" type="button" id="seFeedbackBtn">意见反馈</button>
+<button class="se-btn se-btn-ghost" type="button" id="seShareBtn">分享本页</button>
+</div>
+</div>
+<div class="se-contact-panel">
+<h3>合作品牌与伙伴</h3>
+<p style="font-size:12.8px;color:#9aa7b6;margin-bottom:14px">共同参与黑兽第二季专题内容共建的机构与团队。</p>
+<div class="se-partner-row">
+<span class="se-partner">光影美术联盟</span>
+<span class="se-partner">城市影像档案馆</span>
+<span class="se-partner">独立声音工坊</span>
+<span class="se-partner">青年导演计划</span>
+<span class="se-partner">社区放映协作组</span>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="se-footer">
+<div class="se-footer-inner">
+<div class="se-footer-top">
+<div class="se-footer-brand">
+<a class="se-logo" href="#seTop">
+<span class="se-logo-mark" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+</span>
+<span>深幕视频<small>SHENMU VIDEO</small></span>
+</a>
+<p>深幕视频官方网站，专注影像内容策划与社区共建。围绕黑兽第二季打造原创、正版、高清的精品内容生态，持续运营，值得信赖。</p>
+</div>
+<div class="se-footer-col">
+<h4>内容导航</h4>
+<a href="#seFocus">焦点内容</a>
+<a href="#seStream">热门影像</a>
+<a href="#seTopics">专题企划</a>
+<a href="#seCreators">创作者矩阵</a>
+</div>
+<div class="se-footer-col">
+<h4>关于平台</h4>
+<a href="#seIntro">深度解析</a>
+<a href="#seNews">企业动态</a>
+<a href="#seContact">联系我们</a>
+<a href="#seNews">帮助中心</a>
+</div>
+<div class="se-footer-col">
+<h4>参与共建</h4>
+<a href="#seContact">作品投稿</a>
+<a href="#seTopics">挑战赛报名</a>
+<a href="#seCreators">申请入驻</a>
+<a href="#seContact">意见反馈</a>
+</div>
+</div>
+<div class="se-footer-bottom">
+<span>© 2026 深幕视频（示例品牌）· 官方网站 · 内容持续运营中</span>
+<span>页面内容为品牌展示用途，备案信息：示例备案号 00000000 号</span>
+</div>
+</div>
+</footer>
+
+<button class="se-backtop" id="seBackTop" aria-label="回到顶部">↑</button>
+
+<div class="se-toast" id="seToast" role="status" aria-live="polite"></div>
+
+<div class="se-modal-mask" id="seModalMask">
+<div class="se-modal" role="dialog" aria-modal="true" aria-labelledby="seModalTitle">
+<button class="se-modal-close" id="seModalClose" aria-label="关闭">×</button>
+<h3 id="seModalTitle">分享</h3>
+<p id="seModalDesc">选择分享方式，把黑兽第二季专题推荐给同好。</p>
+<div class="se-share-row" id="seModalShareRow">
+<button type="button" data-share="微信">微信</button>
+<button type="button" data-share="微博">微博</button>
+<button type="button" data-share="QQ">QQ</button>
+<button type="button" data-share="复制链接">复制链接</button>
+</div>
+<div id="seModalExtra"></div>
+</div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var d = document;
+  function $(id){ return d.getElementById(id); }
+  function qsa(sel, root){ return Array.prototype.slice.call((root||d).querySelectorAll(sel)); }
+
+  var toastTimer = null;
+  function toast(msg){
+    var t = $('seToast');
+    t.textContent = msg;
+    t.classList.add('se-show');
+    if(toastTimer){ clearTimeout(toastTimer); }
+    toastTimer = setTimeout(function(){ t.classList.remove('se-show'); }, 2200);
+  }
+
+  /* ===== 公告条关闭 ===== */
+  var announce = $('seAnnounce');
+  $('seAnnounceClose').addEventListener('click', function(){
+    announce.style.display = 'none';
+    toast('公告已收起');
+  });
+
+  /* ===== 移动端导航 ===== */
+  var burger = $('seBurger'), mobileNav = $('seMobileNav');
+  burger.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('se-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.textContent = open ? '×' : '☰';
+  });
+  qsa('a', mobileNav).forEach(function(a){
+    a.addEventListener('click', function(){
+      mobileNav.classList.remove('se-open');
+      burger.setAttribute('aria-expanded','false');
+      burger.textContent = '☰';
+    });
+  });
+
+  /* ===== 搜索反馈 ===== */
+  var tipPop = $('seTipPop');
+  var tipTimer = null;
+  function showTip(html){
+    tipPop.innerHTML = html;
+    tipPop.classList.add('se-show');
+    if(tipTimer){ clearTimeout(tipTimer); }
+    tipTimer = setTimeout(function(){ tipPop.classList.remove('se-show'); }, 4200);
+  }
+  $('seSearchForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var v = $('seSearchInput').value.trim();
+    if(!v){
+      showTip('<strong>请输入关键词</strong>试试「黑兽第二季 叙事」「幕后 美术」或创作者名称。');
+      return;
+    }
+    var matched = [];
+    qsa('.se-video-card h3, .se-topic h3, .se-creator h3').forEach(function(h){
+      if(h.textContent.indexOf(v) > -1){ matched.push(h.textContent); }
+    });
+    if(matched.length){
+      showTip('<strong>找到 ' + matched.length + ' 条相关内容</strong>' + matched.slice(0,3).join(' · '));
+      toast('已为「' + v + '」匹配到 ' + matched.length + ' 条内容');
+    }else{
+      showTip('<strong>暂无精确匹配</strong>可尝试浏览下方焦点内容或热门影像区，或更换更短的关键词。');
+      toast('未找到相关内容，换个关键词试试');
+    }
+  });
+
+  /* ===== 点赞 / 收藏 ===== */
+  qsa('.se-act').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var act = btn.getAttribute('data-act');
+      if(act === 'like'){
+        var span = btn.querySelector('span');
+        var n = parseInt(btn.getAttribute('data-count'), 10) || 0;
+        if(btn.classList.contains('se-on')){
+          btn.classList.remove('se-on');
+          btn.setAttribute('data-count', String(n - 1));
+          if(span){ span.textContent = String(n - 1); }
+          btn.firstChild.nodeValue = '♡ ';
+          toast('已取消点赞');
+        }else{
+          btn.classList.add('se-on');
+          btn.setAttribute('data-count', String(n + 1));
+          if(span){ span.textContent = String(n + 1); }
+          btn.firstChild.nodeValue = '♥ ';
+          toast('感谢支持，已点赞 +1');
+        }
+      }else if(act === 'save'){
+        if(btn.classList.contains('se-on')){
+          btn.classList.remove('se-on');
+          btn.textContent = '收藏';
+          toast('已取消收藏');
+        }else{
+          btn.classList.add('se-on');
+          btn.textContent = '已收藏';
+          toast('已加入你的收藏夹');
+        }
+      }
+    });
+  });
+
+  /* ===== 分享弹窗 ===== */
+  var mask = $('seModalMask');
+  function openModal(title, desc, mode){
+    $('seModalTitle').textContent = title;
+    $('seModalDesc').textContent = desc;
+    var row = $('seModalShareRow');
+    var extra = $('seModalExtra');
+    if(mode === 'share'){
+      row.style.display = 'flex';
+      extra.innerHTML = '';
+    }else{
+      row.style.display = 'none';
+      if(mode === 'submit'){
+        extra.innerHTML = '<p style="font-size:13px;color:#9aa7b6">请将作品链接、封面与简要说明发送至 creator@shenmu-video.example，编辑会在三个工作日内回复。也可在专题企划区直接参与社区共创挑战赛。</p>';
+      }else if(mode === 'feedback'){
+        extra.innerHTML = '<p style="font-size:13px;color:#9aa7b6">请描述你遇到的问题或建议，发送至 content@shenmu-video.example。涉及页面展示的问题，欢迎附上截图与浏览器信息。</p>';
+      }
+    }
+    mask.classList.add('se-show');
+  }
+  function closeModal(){ mask.classList.remove('se-show'); }
+  $('seModalClose').addEventListener('click', closeModal);
+  mask.addEventListener('click', function(e){ if(e.target === mask){ closeModal(); } });
+  d.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeModal(); } });
+
+  $('seShareHero').addEventListener('click', function(){
+    openModal('分享专题', '选择分享方式，把黑兽第二季专题推荐给同好。', 'share');
+  });
+  $('seShareBtn').addEventListener('click', function(){
+    openModal('分享本页', '选择分享方式，把黑兽第二季专题推荐给同好。', 'share');
+  });
+  $('seSubmitBtn').addEventListener('click', function(){
+    openModal('我要投稿', '投稿通道长期开放，欢迎原创影像与深度文字内容。', 'submit');
+  });
+  $('seFeedbackBtn').addEventListener('click', function(){
+    openModal('意见反馈', '你的反馈会帮助我们把内容做得更好。', 'feedback');
+  });
+
+  qsa('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var way = btn.getAttribute('data-share');
+      if(way === '复制链接'){
+        var url = window.location.href;
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(url).then(function(){
+            toast('链接已复制');
+            closeModal();
+          }).catch(function(){
+            toast('复制失败，请手动复制地址栏链接');
+          });
+        }else{
+          toast('当前浏览器不支持自动复制');
+        }
+      }else{
+        toast('已生成' + way + '分享提示（演示）');
+        closeModal();
+      }
+    });
+  });
+
+  /* ===== 回到顶部 ===== */
+  var backTop = $('seBackTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ backTop.classList.add('se-show'); }
+    else{ backTop.classList.remove('se-show'); }
+  }, { passive: true });
+  backTop.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* ===== 数字滚动 ===== */
+  function roll(el, target, suffix){
+    var start = 0, dur = 900, t0 = null;
+    function step(ts){
+      if(!t0){ t0 = ts; }
+      var p = Math.min((ts - t0) / dur, 1);
+      var val = Math.round(start + (target - start) * (1 - Math.pow(1 - p, 3)));
+      el.textContent = String(val);
+      if(suffix){ el.innerHTML = String(val) + '<span style="font-size:14px;color:#9aa7b6">' + suffix + '</span>'; }
+      if(p < 1){ requestAnimationFrame(step); }
+    }
+    requestAnimationFrame(step);
+  }
+  var statVideo = $('seStatVideo'), statCreator = $('seStatCreator'), statUser = $('seStatUser');
+  var rolled = false;
+  function tryRoll(){
+    if(rolled){ return; }
+    var rect = statVideo.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 60){
+      rolled = true;
+      roll(statVideo, 128);
+      roll(statCreator, 46);
+      roll(statUser, 72, '.5万');
+    }
+  }
+  window.addEventListener('scroll', tryRoll, { passive: true });
+  tryRoll();
+
+  /* ===== 简版公告滚动 ===== */
+  var track = $('seAnnounceTrack');
+  if(track && track.children.length > 1){
+    var idx = 0;
+    setInterval(function(){
+      idx = (idx + 1) % track.children.length;
+      for(var i = 0; i < track.children.length; i++){
+        track.children[i].style.opacity = (i === idx) ? '1' : '.45';
+      }
+    }, 3800);
+  }
+})();
+</script>
+</body>
+  </html>
